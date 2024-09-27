@@ -32,9 +32,7 @@ public class Rectangle implements Figure{
 
     @Override
     public Double area() {
-        double area = width * height;
-        System.out.println("Area of rectangle = " + area);
-        return area;
+        return width * height;
     }
 
     @Override

@@ -19,9 +19,7 @@ public class Circle implements Figure {
     }
 
     public Double area() {
-        Double area = 3.14 * this.radius * this.radius;
-        System.out.println("Area of circle = " + area);
-        return area;
+        return 3.14 * this.radius * this.radius;
     }
 
     @Override
