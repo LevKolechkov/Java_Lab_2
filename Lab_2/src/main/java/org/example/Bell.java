@@ -8,13 +8,15 @@ class Bell {
         this.dingTime = true;
     }
 
-    public void sound() {
+    public String sound() {
         if (dingTime) {
             System.out.println("ding dong");
             dingTime = false;
+            return "ding dong";
         } else {
             System.out.println("dong ding");
             dingTime = true;
+            return "dong ding";
         }
     }
 }

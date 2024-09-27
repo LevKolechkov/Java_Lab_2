@@ -8,8 +8,9 @@ class Table {
         numbers = new int[rows][columns];
     }
 
-    public void getValue(int row, int col) {
+    public int getValue(int row, int col) {
         System.out.println(numbers[row][col]);
+        return numbers[row][col];
     }
 
     public void setValue(int row, int col, int value) {
@@ -30,16 +31,16 @@ class Table {
     }
 
     public String toString() {
-        String stringOfNumbers = "";
+        StringBuilder stringOfNumbers = new StringBuilder();
 
-        for (int firstIndex = 0; firstIndex < numbers.length; ++firstIndex) {
+        for (int[] row : numbers) {
             for (int secondIndex = 0; secondIndex < numbers[0].length; ++secondIndex) {
-                int number = numbers[firstIndex][secondIndex];
-                stringOfNumbers += String.valueOf(number);
+                int number = row[secondIndex];
+                stringOfNumbers.append(String.valueOf(number));
             }
         }
 
-        return stringOfNumbers;
+        return stringOfNumbers.toString();
     }
 
     public Double average() {
@@ -47,8 +48,8 @@ class Table {
         int sum = 0;
         int count = 0;
 
-        for (int firstIndex = 0; firstIndex < numbers[0].length; ++firstIndex) {
-            for (int secondIndex = 0; secondIndex < numbers.length; ++secondIndex) {
+        for (int firstIndex = 0; firstIndex < numbers.length; ++firstIndex) {
+            for (int secondIndex = 0; secondIndex < numbers[0].length; ++secondIndex) {
                 ++count;
                 sum += numbers[firstIndex][secondIndex];
             }

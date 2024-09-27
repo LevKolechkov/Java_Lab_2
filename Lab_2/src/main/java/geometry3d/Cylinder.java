@@ -33,7 +33,7 @@ public class Cylinder {
         setHeight(height);
     }
 
-    public double Volume(){
+    public double volume(){
         double volume = height * base.area();
         System.out.println("Volume of circle = " + volume);
         return volume;

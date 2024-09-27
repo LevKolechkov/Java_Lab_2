@@ -23,9 +23,19 @@ class Balance {
         this.leftWeight += addWeight;
     }
 
-    public void result() {
-        if (leftWeight == rightWeight) System.out.println("=");
-        else if (leftWeight < rightWeight) System.out.println(("R"));
-        if (rightWeight > leftWeight) System.out.println("L");
+    public String result() {
+        if (leftWeight == rightWeight) {
+            System.out.println("=");
+            return "=";
+        };
+        if (leftWeight < rightWeight) {
+            System.out.println(("R"));
+            return "R";
+        };
+        if (leftWeight > rightWeight){
+            System.out.println("L");
+            return "L";
+        }
+        return null;
     }
 }

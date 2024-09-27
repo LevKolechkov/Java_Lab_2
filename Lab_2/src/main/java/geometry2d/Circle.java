@@ -26,6 +26,6 @@ public class Circle implements Figure {
 
     @Override
     public String toString() {
-        return "radius =" + this.radius;
+        return "radius = " + this.radius;
     }
 }
