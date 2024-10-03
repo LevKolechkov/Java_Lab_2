@@ -15,12 +15,12 @@ public class OddEvenSeparatorTest {
         oddEvenSeparator.addNumber(5);
         oddEvenSeparator.addNumber(12);
 
-        ArrayList<Integer> expectedEvenList = new ArrayList<Integer>();
+        ArrayList<Integer> expectedEvenList = new ArrayList<>();
         expectedEvenList.add(2);
         expectedEvenList.add(12);
         assertEquals(expectedEvenList, oddEvenSeparator.evenList);
 
-        ArrayList<Integer> expectedOddList = new ArrayList<Integer>();
+        ArrayList<Integer> expectedOddList = new ArrayList<>();
         expectedOddList.add(5);
         assertEquals(expectedOddList, oddEvenSeparator.oddList);
     }

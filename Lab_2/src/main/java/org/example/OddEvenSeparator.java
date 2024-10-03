@@ -9,8 +9,8 @@ class OddEvenSeparator {
     List<Integer> evenList;
 
     public OddEvenSeparator() {
-        this.evenList = new ArrayList<Integer>();
-        this.oddList = new ArrayList<Integer>();
+        this.evenList = new ArrayList<>();
+        this.oddList = new ArrayList<>();
     }
 
     public void addNumber(int toAddNumber) {

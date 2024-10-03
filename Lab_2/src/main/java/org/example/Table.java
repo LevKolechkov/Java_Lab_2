@@ -36,7 +36,7 @@ class Table {
         for (int[] row : numbers) {
             for (int secondIndex = 0; secondIndex < numbers[0].length; ++secondIndex) {
                 int number = row[secondIndex];
-                stringOfNumbers.append(String.valueOf(number));
+                stringOfNumbers.append(number);
             }
         }
 
@@ -44,14 +44,14 @@ class Table {
     }
 
     public Double average() {
-        double average = 0;
+        double average;
         int sum = 0;
         int count = 0;
 
-        for (int firstIndex = 0; firstIndex < numbers.length; ++firstIndex) {
+        for (int[] number : numbers) {
             for (int secondIndex = 0; secondIndex < numbers[0].length; ++secondIndex) {
                 ++count;
-                sum += numbers[firstIndex][secondIndex];
+                sum += number[secondIndex];
             }
         }
 

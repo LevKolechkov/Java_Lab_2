@@ -16,6 +16,9 @@ public class Main {
         balance.addRight(16);
         balance.result();
 
+        balance = new Balance(5, 6);
+        balance.result();
+
         Bell bell = new Bell();
         for (int count = 0; count < 3; ++count){
             bell.sound();
