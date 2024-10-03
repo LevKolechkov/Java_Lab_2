@@ -27,15 +27,12 @@ class Balance {
         if (leftWeight == rightWeight) {
             System.out.println("=");
             return "=";
-        };
+        }
         if (leftWeight < rightWeight) {
             System.out.println(("R"));
             return "R";
-        };
-        if (leftWeight > rightWeight){
-            System.out.println("L");
-            return "L";
         }
-        return null;
+        System.out.println("L");
+        return "L";
     }
 }
